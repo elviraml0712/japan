@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+    <title> Accordion </title>
+    <style type="text/css">
+        .container {
+            max-width: 500px;
+            margin-top: 50px;
+            background-color: #E6C1DA;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .japan {
+            font-family: cursive;
+            color: #8c3e73;
+        }
+
+        .accordion-item:first-child .accordion-button {
+            background-color: #ffdef4; 
+            border-color: #8c3e73;
+        }
+
+        .accordion-button:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px #baa0b6; 
+        }
+
+        .accordion-body {
+            background-color: #fff2fd;
+        }
+
+        .accordion-header {
+            font-family: cursive;
+            color: #8c3e73;
+        }
+
+        .accordion-img {
+            width: 100%; 
+            max-width: 250px; 
+            height: auto;
+            border-radius: 8px; 
+            align-content: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3 class="mb-4 japan text-center"> Japan </h3>
+        <div class="accordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        Osaka
+                    </button>
+                </h2>
+
+                <div id="collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img class="accordion-img" src="images/osaka.jpg">
+                            </div>
+                        <div class="col-md-8">
+                            <p style="font-size: 14px;">
+                                Osaka is a large port city and commercial center on the Japanese island of Honshu. It's known for its modern architecture, nightlife and hearty street food.
+                            </p>
+
+                            <button class="btn" style="background-color: #E6C1DA;">
+                                <a href="https://osaka-info.jp/en/osaka/" style="text-decoration: none; color: #8c3e73;"> See More </a>
+                            </button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                        Tokyo
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img class="accordion-img" src="images/tokyo.jpg">
+                            </div>
+                        <div class="col-md-8">
+                            <p style="font-size: 14px;">
+                                Tokyo, Japan’s busy capital, mixes the ultramodern and the traditional. The opulent Meiji Shinto Shrine is known for its towering gate and surrounding woods.
+                            </p>
+
+                            <button class="btn" style="background-color: #E6C1DA;">
+                                <a href="https://www.gotokyo.org/en/index.html" style="text-decoration: none; color: #8c3e73;"> See More </a>
+                            </button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                        Kyoto
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img class="accordion-img" src="images/kyoto.jpg">
+                            </div>
+                        <div class="col-md-8">
+                            <p style="font-size: 14px;">
+                                Kyoto, is a city on the island of Honshu. It's famous for its classical Buddhist temples, Shinto shrines and traditional wooden houses.
+                            </p>
+
+                            <button class="btn" style="background-color: #E6C1DA;">
+                                <a href="https://www.kyoto.travel/" style="text-decoration: none; color: #8c3e73;"> See More </a>
+                            </button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                        Hiroshima
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img class="accordion-img" src="images/hiro.jpg">
+                            </div>
+                        <div class="col-md-8">
+                            <p style="font-size: 14px;">
+                                Hiroshima, a modern city on Japan’s Honshu Island. Today, Hiroshima Peace Memorial Park commemorates the 1945 event.
+                            </p>
+
+                            <button class="btn" style="background-color: #E6C1DA;">
+                                <a href="https://dive-hiroshima.com/en/" style="text-decoration: none; color: #8c3e73;"> See More </a>
+                            </button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
